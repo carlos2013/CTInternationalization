@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CTViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
+- (IBAction)buttonClicked:(id)sender;
 @end

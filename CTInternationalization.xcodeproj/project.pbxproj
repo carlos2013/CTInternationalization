@@ -21,6 +21,8 @@
 		945D61291902BDF60019F00F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945D610B1902BDF50019F00F /* UIKit.framework */; };
 		945D61311902BDF60019F00F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945D612F1902BDF60019F00F /* InfoPlist.strings */; };
 		945D61331902BDF60019F00F /* CTInternationalizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945D61321902BDF60019F00F /* CTInternationalizationTests.m */; };
+		945D613E1902BE4D0019F00F /* InternationalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 945D613D1902BE4D0019F00F /* InternationalizationManager.m */; };
+		945D61441902C16B0019F00F /* Internationalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945D61461902C16B0019F00F /* Internationalization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,12 @@
 		945D612E1902BDF60019F00F /* CTInternationalizationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTInternationalizationTests-Info.plist"; sourceTree = "<group>"; };
 		945D61301902BDF60019F00F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		945D61321902BDF60019F00F /* CTInternationalizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTInternationalizationTests.m; sourceTree = "<group>"; };
+		945D613C1902BE4D0019F00F /* InternationalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternationalizationManager.h; path = ../InternationalizationManager.h; sourceTree = "<group>"; };
+		945D613D1902BE4D0019F00F /* InternationalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InternationalizationManager.m; path = ../InternationalizationManager.m; sourceTree = "<group>"; };
+		945D61451902C16B0019F00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Internationalization.strings; sourceTree = "<group>"; };
+		945D61471902C1710019F00F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Internationalization.strings; sourceTree = "<group>"; };
+		945D61481902C1970019F00F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		945D61491902C1970019F00F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Internationalization.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		945D610D1902BDF60019F00F /* CTInternationalization */ = {
 			isa = PBXGroup;
 			children = (
+				945D613F1902BE5C0019F00F /* Internationalization */,
 				945D61161902BDF60019F00F /* CTAppDelegate.h */,
 				945D61171902BDF60019F00F /* CTAppDelegate.m */,
 				945D61191902BDF60019F00F /* Main.storyboard */,
@@ -130,6 +139,7 @@
 				945D61101902BDF60019F00F /* InfoPlist.strings */,
 				945D61131902BDF60019F00F /* main.m */,
 				945D61151902BDF60019F00F /* CTInternationalization-Prefix.pch */,
+				945D61461902C16B0019F00F /* Internationalization.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +160,15 @@
 				945D612F1902BDF60019F00F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		945D613F1902BE5C0019F00F /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+				945D613C1902BE4D0019F00F /* InternationalizationManager.h */,
+				945D613D1902BE4D0019F00F /* InternationalizationManager.m */,
+			);
+			name = Internationalization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +231,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 945D60FB1902BDF50019F00F;
 			productRefGroup = 945D61051902BDF50019F00F /* Products */;
@@ -231,6 +251,7 @@
 			files = (
 				945D61201902BDF60019F00F /* Images.xcassets in Resources */,
 				945D61121902BDF60019F00F /* InfoPlist.strings in Resources */,
+				945D61441902C16B0019F00F /* Internationalization.strings in Resources */,
 				945D611B1902BDF60019F00F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				945D61141902BDF60019F00F /* main.m in Sources */,
+				945D613E1902BE4D0019F00F /* InternationalizationManager.m in Sources */,
 				945D61181902BDF60019F00F /* CTAppDelegate.m in Sources */,
 				945D611E1902BDF60019F00F /* CTViewController.m in Sources */,
 			);
@@ -279,6 +301,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				945D61111902BDF60019F00F /* en */,
+				945D61481902C1970019F00F /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -297,6 +320,16 @@
 				945D61301902BDF60019F00F /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		945D61461902C16B0019F00F /* Internationalization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				945D61451902C16B0019F00F /* Base */,
+				945D61471902C1710019F00F /* en */,
+				945D61491902C1970019F00F /* zh-Hans */,
+			);
+			name = Internationalization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

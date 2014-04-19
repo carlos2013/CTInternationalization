@@ -1,0 +1,10 @@
+/* 
+  Internationalization.strings
+  CTInternationalization
+
+  Created by 赵从挺 on 4/19/14.
+  Copyright (c) 2014 carlos. All rights reserved.
+*/
+
+"buttonTitle" = "Change Language";
+"easy" = "It's very easy, isn't it?";
