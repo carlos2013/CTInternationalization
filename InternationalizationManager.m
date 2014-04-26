@@ -37,8 +37,8 @@
     //if user have not set a prefered language in the App, we will get the system prefered language.
     if(string.length == 0){
         //get current language of system
-        NSString *currentLanguage = [[userDefault objectForKey:@"AppleLanguages"] objectAtIndex:0];
-        [userDefault setValue:currentLanguage forKey:CURRENT_USER_LANGUAGE];
+        string = [[userDefault objectForKey:@"AppleLanguages"] objectAtIndex:0];
+        [userDefault setValue:string forKey:CURRENT_USER_LANGUAGE];
         [userDefault synchronize];
     }
     
